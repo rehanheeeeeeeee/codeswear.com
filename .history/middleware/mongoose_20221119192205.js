@@ -1,0 +1,9 @@
+import mongoose from "mongoose";
+
+const connectDb = async (handler) => {
+  if (mongoose.connections[0].readyState) {
+    // if already connected to the database\
+    return handler(req, res);
+  }
+  await mongoose.connect(process.env.MONGO_URI);
+};

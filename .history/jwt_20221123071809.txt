@@ -1,0 +1,3 @@
+JWT : JSON WEB TOKEN it is used to store the data inside of a server
+and that data stored in thw server can only be changed via
+a signature.
