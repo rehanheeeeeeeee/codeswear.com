@@ -10,20 +10,12 @@ const styles = {
   heading2: "mx-16 ",
 };
 
-const Headings = () => (
-  <div className={styles.headings}>
-    <div className={styles.heading}>Description</div>
-    <div className={styles.heading2}>Quantity</div>
-    <div>Price</div>
-  </div>
-);
-
 export default function Orders() {
   const basket = useSelector(selectBasket);
   const basketTotal = useSelector(selectBasketTotal);
   return (
     <div>
-      <div className="mx-auto p-4">
+      <div className="mx-auto p-5">
         <p className="md:text-[4vw] font-bold text-3xl w-full text-center">
           My Orders
         </p>
@@ -33,7 +25,7 @@ export default function Orders() {
           <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
             <div class="overflow-hidden">
               <table class="min-w-full">
-                <thead class="bg-white border-b">
+                <thead class="border-b">
                   <tr>
                     <th
                       scope="col"
@@ -62,7 +54,7 @@ export default function Orders() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                  <tr class="border-b">
                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                       1
                     </td>

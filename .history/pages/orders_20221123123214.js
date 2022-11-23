@@ -10,20 +10,14 @@ const styles = {
   heading2: "mx-16 ",
 };
 
-const Headings = () => (
-  <div className={styles.headings}>
-    <div className={styles.heading}>Description</div>
-    <div className={styles.heading2}>Quantity</div>
-    <div>Price</div>
-  </div>
-);
+const headings = [""];
 
 export default function Orders() {
   const basket = useSelector(selectBasket);
   const basketTotal = useSelector(selectBasketTotal);
   return (
-    <div>
-      <div className="mx-auto p-4">
+    <div className="md:px-20 w-[80vw] md:py-6">
+      <div className="mx-auto p-5">
         <p className="md:text-[4vw] font-bold text-3xl w-full text-center">
           My Orders
         </p>

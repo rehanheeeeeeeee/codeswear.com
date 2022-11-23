@@ -110,7 +110,7 @@ export default function Navbar() {
                 onMouseLeave={() => setDropdown(false)}
               >
                 <p
-                  onClick={() => router.push("account")}
+                  onClick={() => router.push("acccount")}
                   className={styles.userOption}
                 >
                   My Account

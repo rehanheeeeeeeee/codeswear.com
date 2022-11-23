@@ -109,19 +109,14 @@ export default function Navbar() {
                 onMouseEnter={() => setDropdown(true)}
                 onMouseLeave={() => setDropdown(false)}
               >
-                <p
-                  onClick={() => router.push("account")}
-                  className={styles.userOption}
-                >
-                  My Account
-                </p>
+                <p className={styles.userOption}>My Account</p>
                 <p
                   onClick={() => router.push("/orders")}
                   className={styles.userOption}
                 >
                   Orders
                 </p>
-                <p className={styles.userOption} onClick={() => handleLogout()}>
+                <p className={styles.userOption} onClick={()=>handleLogout()}>
                   Sign out
                 </p>
               </motion.div>

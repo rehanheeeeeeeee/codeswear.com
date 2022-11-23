@@ -12,6 +12,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const dispatch = useDispatch();
   const router = useRouter();
+  const user = useSelector(selectUser);
   const loginUser = async (event) => {
     event.preventDefault();
     const user = {

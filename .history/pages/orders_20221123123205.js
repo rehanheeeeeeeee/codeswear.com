@@ -10,20 +10,14 @@ const styles = {
   heading2: "mx-16 ",
 };
 
-const Headings = () => (
-  <div className={styles.headings}>
-    <div className={styles.heading}>Description</div>
-    <div className={styles.heading2}>Quantity</div>
-    <div>Price</div>
-  </div>
-);
+const headings = [""];
 
 export default function Orders() {
   const basket = useSelector(selectBasket);
   const basketTotal = useSelector(selectBasketTotal);
   return (
-    <div>
-      <div className="mx-auto p-4">
+    <div className="md:px-20 w-[80vw] md:py-6">
+      <div className="mx-auto p-5">
         <p className="md:text-[4vw] font-bold text-3xl w-full text-center">
           My Orders
         </p>
@@ -74,6 +68,34 @@ export default function Orders() {
                     </td>
                     <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                       @mdo
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                      2
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      Jacob
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      Thornton
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      @fat
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                      3
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      Larry
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      Wild
+                    </td>
+                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                      @twitter
                     </td>
                   </tr>
                 </tbody>
